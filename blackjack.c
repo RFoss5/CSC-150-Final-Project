@@ -4,7 +4,7 @@
 int main(){
 	srand(time(NULL));
 	int i=1,jqk=1,l,handtotal=0, dealertotal=0;
-	char deck[52],hand[5];
+	int deck[52],hand[5];
 
 	while(i<40){
 	for(int m=1;m<11;m++){
@@ -21,7 +21,7 @@ int main(){
   		int num = rand() % 52 + 1;
   		hand[l]=deck[num];
   		handtotal+=deck[num];
-  		printf("%c ",hand[l]+'0');
+  		printf("%d ",hand[l]);
   	}
   	for (int deal = 0; deal < 2; deal++) {
   		int num = rand() % 52 + 1;
